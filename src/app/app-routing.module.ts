@@ -2,8 +2,11 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+  { path: '', redirectTo: 'main-menu', pathMatch: 'full' },
+  { path: 'main-menu', loadChildren: () => import('./pages/main-menu/main-menu.module').then(m => m.MainMenuPageModule)},
+  { path: 'rulesets', loadChildren: './rulesets/rulesets.module#RulesetsPageModule' },
+  { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' },
+  { path: 'ruleset-list', loadChildren: './pages/ruleset-list/ruleset-list.module#RulesetListPageModule' },
 ];
 
 @NgModule({

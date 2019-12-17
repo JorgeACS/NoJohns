@@ -1,0 +1,36 @@
+.ruleset-item-image{
+  grid-area:logo;
+  object-fit: contain;
+  width:100%;
+  height:auto;
+}
+.ruleset-name{
+  grid-area:name;
+  justify-self:end;
+}
+.ruleset-count{
+  grid-area:ruleset-count;
+  justify-self:end;
+
+}
+
+.unavailable{
+  opacity: 0.5;
+}
+.ruleset-item{
+  align-items:center;
+  height:20%;
+  border-bottom:1px solid black;
+  display:grid;
+  grid-template-areas:
+          ". . . ."
+          "logo . name ."
+          "logo . ruleset-count ."
+          "logo . . ." ;
+  grid-template-columns:50% 20% 25% 5%;
+  grid-template-rows: 5% 15% 15% 65%;
+}
+
+.ruleset-container{
+  height:100%
+}

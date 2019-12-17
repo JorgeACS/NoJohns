@@ -24,3 +24,38 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.aligned-grid{
+    display:grid;
+    align-items:center;
+    justify-content: center;
+}
+.stock-button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius:25px;
+    box-shadow: 0 0 5px 3px black;
+}
+.responsive-image{
+    width:100%;
+    height:auto;
+}
+
+.smash-64{
+    background-color: burlywood;
+}
+
+.smash-melee{
+    background-color: darksalmon;
+}
+
+.smash-brawl{
+    background-color: lightblue;
+}
+
+.smash-projectM{
+    background-color: mediumpurple;
+}
+
+.smash-ultimate{
+    background-color: lightgray;
+}

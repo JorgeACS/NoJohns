@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Main Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content-grid">
+    <div class="quick-match aligned-grid stock-button">
+      <div class="smash-logo">
+      </div>
+      <div>
+        Smash!
+      </div>
+    </div>
+    <div [routerLink]="['/settings']" class="aligned-grid stock-button settings">
+      <div>Settings</div>
+      <ion-icon class= "settings-icon" name="cog"></ion-icon>
+    </div>
+    <div [routerLink]="['/rulesets']" class="aligned-grid stock-button rulesets">
+      <div>Rulesets</div>
+      <ion-icon class= "rulesets-icon" name="book"></ion-icon>
+    </div>
+  </div>
+</ion-content>

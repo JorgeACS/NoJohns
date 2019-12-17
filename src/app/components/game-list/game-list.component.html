@@ -1,0 +1,11 @@
+<div *ngIf="gameList; else loadingScreen" class="ruleset-container">
+  <div *ngFor="let game of gameList" [ngClass]="'ruleset-item smash-'+game.id + (game.available? '' : ' unavailable')">
+    <img class="ruleset-item-image" [src]="'./../assets/logos/'+game.id+'.png'"/>
+    <div class="ruleset-name">
+      {{game.shorthand}}
+    </div>
+    <div class="ruleset-count">
+      0 Items
+    </div>
+  </div>
+</div>
