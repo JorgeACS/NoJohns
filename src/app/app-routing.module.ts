@@ -4,8 +4,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'main-menu', pathMatch: 'full' },
   { path: 'main-menu', loadChildren: () => import('./pages/main-menu/main-menu.module').then(m => m.MainMenuPageModule)},
-  { path: 'rulesets', loadChildren: './rulesets/rulesets.module#RulesetsPageModule' },
-  { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' },
+  { path: 'rulesets', loadChildren: './pages/rulesets/rulesets.module#RulesetsPageModule' },
+  { path: 'settings', loadChildren: './pages/settings/settings.module#SettingsPageModule' },
   { path: 'ruleset-list', loadChildren: './pages/ruleset-list/ruleset-list.module#RulesetListPageModule' },
 ];
 

@@ -9,10 +9,13 @@ import { RulesetsPage } from './rulesets.page';
 import {GameListComponent} from '../../components/game-list/game-list.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: RulesetsPage
-  }
+    {
+      path: '',
+      component: RulesetsPage
+    },
+    { path: ':id',
+      loadChildren: () => import('./../ruleset-list/ruleset-list.module').then(m => m.RulesetListPageModule) 
+    }
 ];
 
 @NgModule({

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {SmashGamesService} from '../../services/smash-games/smash-games.service';
 import {Game} from '../../models/game/game';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-rulesets',
@@ -11,6 +11,10 @@ export class RulesetsPage{
 
   public gameList: Game[];
 
-  constructor() {
+  constructor(private router: Router, private route: ActivatedRoute) {
+  }
+
+  openRulesets(gameId: string){
+    this.router.navigate([gameId],{relativeTo:this.route});
   }
 }
